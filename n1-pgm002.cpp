@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {	 
-	float a, b, media;
+	float a, b, c, media;
 	
 	cout << "Renoir dos Reis \n";
 	cout << "Engenharia da Computação \n";
@@ -21,10 +21,12 @@ int main()
 	cin >> a;
 	cout << "Digite a segunda média \n";
 	cin >> b;
+	cout << "Digite a segunda média \n";
+	cin >> c;
 	
 	// calculando o valor da da média
 	 
-	media = (a + b) / 2;
+	media = (a + b + c) / 3;
 	
 	cout << "A média equivale a: \n";
 	cout << media;

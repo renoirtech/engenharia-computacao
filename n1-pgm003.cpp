@@ -1,9 +1,10 @@
 /* 
-* Disciplina: Laboratório de Programação
+* Disciplina:  Laboratório de Programação
 * Aluno: 	   Renoir dos Reis
 * Data: 	   14/08/2017
-* Exercicio:  Sistema de calculo de média simples
+* Exercicio:   Sistema de calculo de média ponderada
 */
+
 #include<cmath>
 #include<iostream>
 
@@ -11,7 +12,7 @@ using namespace std;
 
 int main()
 {	 
-	float a, b, media;
+	float a, b, c, media;
 	
 	cout << "Renoir dos Reis \n";
 	cout << "Engenharia da Computação \n";
@@ -21,13 +22,16 @@ int main()
 	cin >> a;
 	cout << "Digite a segunda média \n";
 	cin >> b;
+	cout << "Digite a segunda média \n";
+	cin >> c;
 	
 	// calculando o valor da da média
 	 
-	media = (a + b) / 2;
+	media = (a * 0.5) + (b * 0.3) + (c * 0.2) / (0.5 + 0.3 + 0.2);
 	
 	cout << "A média equivale a: \n";
 	cout << media;
 	cout << "\n Fim de programa \n";
 	
 }
+
