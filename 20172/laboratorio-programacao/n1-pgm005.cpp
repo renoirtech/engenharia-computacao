@@ -47,20 +47,21 @@ int main()
 	xum   = ((b * -1) / (2 * a)) + (sqrt(delta) / (2 * a)) ;
 	xum   = ((b * -1) / (2 * a)) - (sqrt(delta) / (2 * a)) ;
 
-	if(delta > 0)
+	if(delta == 0)
 	{
-		if(delta == 0)
-		{
-			xum = xdois;
-		}
+		xum = xdois;
+	}
 
+	if(delta >= 0)
+	{
 		// SAIDA DE INFORMAÇÕES (DADOS PROCESSADOS)
 		cout << "A Raiz x' é equivalente a: \n";
 		cout << xum;
 		cout << "\nA Raiz x\" é equivalente a: \n";
 		cout << xdois;
 	}
-	else
+
+	if(delta < 0)
 	{
 		cout << "A equação não possui raizes reais\n";
 	}
